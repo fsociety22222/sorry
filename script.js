@@ -166,9 +166,9 @@ qs('#btn2').addEventListener('click', () => {
 const lines = [
   'aku beneran menyesal…',
   'aku harusnya lebih pengertian.',
-  'kamu nggak pantas dapetin itu.',
+  'maaf sayang.',
   'dan aku minta maaf,',
-  'dari hati yang paling dalam. 🤍'
+  'aku bener bener minta maaf banget.',
 ];
 
 function startTypewriter() {
