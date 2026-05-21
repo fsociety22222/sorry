@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>untuk kamu 🤍</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- LOCKSCREEN -->
+  <div id="lockscreen">
+    <div class="lk-card">
+      <div class="lk-icon">🔒</div>
+      <p class="lk-label">Masukin PIN dulu ya 🤍</p>
+      <div class="lk-dots">
+        <span class="lk-dot"></span>
+        <span class="lk-dot"></span>
+        <span class="lk-dot"></span>
+        <span class="lk-dot"></span>
+      </div>
+      <p class="lk-err" id="lkErr">ih salah :(</p>
+      <div class="lk-numpad">
+        <button class="lk-num" data-n="1">1</button>
+        <button class="lk-num" data-n="2">2</button>
+        <button class="lk-num" data-n="3">3</button>
+        <button class="lk-num" data-n="4">4</button>
+        <button class="lk-num" data-n="5">5</button>
+        <button class="lk-num" data-n="6">6</button>
+        <button class="lk-num" data-n="7">7</button>
+        <button class="lk-num" data-n="8">8</button>
+        <button class="lk-num" data-n="9">9</button>
+        <button class="lk-num lk-clue" id="lkClueBtn">Clue?</button>
+        <button class="lk-num" data-n="0">0</button>
+        <button class="lk-num lk-del" id="lkDel">⌫</button>
+      </div>
+    </div>
+
+    <div class="clue-overlay" id="clueOverlay">
+      <div class="clue-box">
+        <p>💡</p>
+        <p class="clue-title">psst…</p>
+        <p class="clue-text">pakai tanggal dan bulan lahir kamu :)</p>
+        <button id="clueClose">oke!</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN -->
+  <div id="app" class="hidden">
+
+    <!-- Slide 1 -->
+    <section class="slide active" id="s1">
+      <div class="hearts" id="hearts"></div>
+      <div class="center-col">
+        <p class="pre-text">hey, kamu…</p>
+        <h1>aku cuma pengen<br/><em>minta maaf…</em></h1>
+        <p class="sub-text">ada yang ingin aku bilang 🤍</p>
+        <button class="btn-pill" id="btn1">buka pesan →</button>
+      </div>
+    </section>
+
+    <!-- Slide 2 -->
+    <section class="slide" id="s2">
+      <div class="card-msg" id="cardMsg">
+        <p class="card-to">untuk kamu,</p>
+        <p class="card-body">
+          Aku tau kamu mungkin lagi kecewa sama aku. Dan jujur, aku pantas dapat itu.<br/><br/>
+          Aku minta maaf, beneran. Bukan karena terpaksa, tapi karena aku nyesel banget. Aku nggak seharusnya bikin kamu ngerasa kayak gitu.<br/><br/>
+          Kamu selalu baikin aku, selalu sabar — dan aku malah gitu. Makanya aku bikin ini, biar kamu tau aku serius.<br/><br/>
+          Aku minta maaf dari hati yang paling dalem. 🤍
+        </p>
+        <p class="card-sign">— seseorang yang nyesel banget</p>
+      </div>
+      <button class="btn-pill" id="btn2">lanjut →</button>
+    </section>
+
+    <!-- Slide 3 -->
+    <section class="slide" id="s3">
+      <div class="fall" id="fall"></div>
+      <div class="center-col" style="z-index:2">
+        <div id="typeArea"></div>
+      </div>
+      <button class="btn-pill hidden-btn" id="btn3">lanjut →</button>
+    </section>
+
+    <!-- Slide 4 -->
+    <section class="slide" id="s4">
+      <div class="center-col">
+        <p class="pre-text">jujur aja ya…</p>
+        <h2>masih marah?</h2>
+        <div class="row-btns">
+          <button class="btn-ghost" id="s4Yes">iya</button>
+          <button class="btn-pill" id="s4No">enggak kok</button>
+        </div>
+        <p class="hint-text">*coba pencet yang "iya" hehe</p>
+      </div>
+    </section>
+
+    <!-- Slide 5 -->
+    <section class="slide" id="s5">
+      <div class="fall" id="fall5"></div>
+      <div class="card-msg" id="finalCard">
+        <p class="card-stamp">💌</p>
+        <p class="card-to">untuk kamu yang paling aku sayang,</p>
+        <p class="card-body">
+          aku hari ini belum bisa keluar, karena badan aku lagi panas. rasanya nggak enak banget, tapi yang bikin lebih nggak enak adalah ngerasa kamu lagi kecewa sama aku.<br/><br/>
+          aku pengen ada buat kamu, beneran. tapi hari ini badanku nggak mengizinkan. maafin aku ya sayang…<br/><br/>
+          aku janji, begitu aku udah mending, aku bakal lakuin semuanya buat nebus ini. apapun yang bikin kamu senyum lagi.<br/><br/>
+          makasih udah sabar. makasih udah tetap di sini. kamu berarti banget buat aku. 🤍
+        </p>
+        <p class="card-sign">dengan segala maaf dan rasa sayang,<br/><strong>aku</strong> 🌸</p>
+      </div>
+    </section>
+
+  </div>
+
+  <button class="music-btn" id="musicBtn">🔇</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
